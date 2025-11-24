@@ -338,6 +338,66 @@ body {
     color: #34519b;
 }
 
+/* ALBUM */
+.album {
+    width: 98%;
+    margin: 10rem auto 4rem;
+}
+
+.album .album-wrapper {
+    width: 100%;
+}
+
+.album .album-wrapper article {
+    width: 100%;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.album .album-wrapper article.tablet, .album .album-wrapper article.pc {
+    display: none;
+}
+
+.album .album-wrapper article a img {
+    width: 80%;
+    display: block;
+    margin: 0 auto 1rem;
+    transition: all .4s;
+    border-radius: 4px;
+}
+
+.album .album-wrapper article a img:hover {
+    transform: scale(1.05);
+}
+
+.album .album-wrapper article h4 {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-bottom: .6rem;
+}
+
+.album .album-wrapper p {
+    color: #bdbdbd;
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.album .album-wrapper a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 400;
+    transition: all .4s;
+}
+
+.album .album-wrapper a:hover {
+    color: #34519b;
+}
+
+
 /* FOOTER */
 #footer {
     width: 100%;
@@ -422,4 +482,16 @@ body {
 .topBtn button:hover {
     background: #34519b;
     border: 1px solid #34519b;
+}
+
+
+/* TABLET */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+
+/* PC */
+@media screen and (min-width: 1025px) {
+    
 }
