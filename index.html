@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="font/Roboto_Flex/">
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/01.js"></script>
-    <!-- slick.js 관련 링크 완전 제거 -->
 </head>
 
 <body>
@@ -29,6 +28,22 @@
     <div class="menuBtn">
         <div class="menuBtn-wrapper">
             <i class="xi-bars"></i>
+        </div>
+    </div>
+
+    <div class="pc-menu">
+        <div class="pc-wrapper">
+            <ul>
+                <li><a href="#">TOUR DATES</a></li>
+                <li><a href="#">MUSIC</a></li>
+                <li><a href="#">VIDEOS</a></li>
+                <li><a href="#">NEWS</a></li>
+                <li><a href="#">PHOTOS</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#" target="_blank">NBT ID</a></li>
+                <li><a href="#" target="_blank">DCC</a></li>
+                <li><a href="#" target="_blank">OFFICIAL STORE</a></li>
+            </ul>
         </div>
     </div>
 
@@ -53,7 +68,8 @@
     </nav>
 
     <main class="main-banner">
-        <img src="img/NBT-mobile01.jpg" alt="main-img">
+        <img src="img/NBT-mobile01.jpg" alt="main-img" data-pc="img/NBT-Desktop-2.jpg" data-mobile="img/NBT-mobile01.jpg" class="mobile-img">
+        <img src="img/NBT-Desktop-2.jpg" alt="main-img-desktop" class="pc-img">
     </main>
 
     <div class="merchandise">
@@ -171,23 +187,15 @@
 
             <div class="dates">
                 <article class="date-item">
-                    <h5>24TH JANUARY 2026</h5>
-                    <p>2026-01-24</p>
+                    <div class="dt">
+                        <h5>24TH JANUARY 2026</h5>
+                        <p>2026-01-24</p>
+                    </div>
 
-                    <p>Catani Gardens</p>
-                    <p>Melbourne, AUS</p>
-
-                    <a href="#" target="_blank" class="ticket-link">
-                        GET TICKETS
-                    </a>
-                </article>
-
-                <article class="date-item">
-                    <h5>26TH JANUARY 2026</h5>
-                    <p>2026-01-26</p>
-
-                    <p>Hindley St. Music Hall</p>
-                    <p>Adelaide, AUS</p>
+                    <div class="country">
+                        <p>Catani Gardens</p>
+                        <p>Melbourne, AUS</p>
+                    </div>
 
                     <a href="#" target="_blank" class="ticket-link">
                         GET TICKETS
@@ -195,11 +203,31 @@
                 </article>
 
                 <article class="date-item">
-                    <h5>28TH JANUARY 2026</h5>
-                    <p>2026-01-28</p>
+                    <div class="dt">
+                        <h5>26TH JANUARY 2026</h5>
+                        <p>2026-01-26</p>
+                    </div>
 
-                    <p>Anita's Theatre</p>
-                    <p>Thirroul, AUS</p>
+                    <div class="country">
+                        <p>Hindley St. Music Hall</p>
+                        <p>Adelaide, AUS</p>
+                    </div>
+
+                    <a href="#" target="_blank" class="ticket-link">
+                        GET TICKETS
+                    </a>
+                </article>
+
+                <article class="date-item">
+                    <div class="dt">
+                        <h5>28TH JANUARY 2026</h5>
+                        <p>2026-01-28</p>
+                    </div>
+
+                    <div class="country">
+                        <p>Anita's Theatre</p>
+                        <p>Thirroul, AUS</p>
+                    </div>
 
                     <a href="#" target="_blank" class="ticket-link">
                         GET TICKETS
@@ -217,16 +245,18 @@
 
     <div class="album">
         <div class="album-wrapper">
-            <article class="album-item mobile">
+            <article class="album-item mobile size-large">
                 <a href="#" target="_blank">
                     <img src="img/DeadClubCity-cover01.jpeg" alt="album-img">
                 </a>
 
-                <h4>DEAD CLUB CITY (DELUXE)</h4>
-                <p>19TH JULY 2024</p>
-                <a href="#" target="_blank">
-                    LISTEN NOW
-                </a>
+                <div class="album-txt">
+                    <h4>DEAD CLUB CITY (DELUXE)</h4>
+                    <p>19TH JULY 2024</p>
+                    <a href="#" target="_blank">
+                        LISTEN NOW
+                    </a>
+                </div>
             </article>
 
             <article class="album-item mobile">
@@ -234,11 +264,13 @@
                     <img src="img/OhNoHeSaidWhat-cover.jpg" alt="album-img">
                 </a>
 
-                <h4>OH NO :: HE SAID WHAT?</h4>
-                <p>29TH JANUARY 2024</p>
-                <a href="#" target="_blank">
-                    LISTEN NOW
-                </a>
+                <div class="album-txt">
+                    <h4>OH NO :: HE SAID WHAT?</h4>
+                    <p>29TH JANUARY 2024</p>
+                    <a href="#" target="_blank">
+                        LISTEN NOW
+                    </a>
+                </div>
             </article>
 
             <article class="album-item mobile">
@@ -246,23 +278,27 @@
                     <img src="img/SomethingOnMyMind-cover.jpg" alt="album-img">
                 </a>
 
-                <h4>SOMETHING ON MY MIND - PURPLE DISCO MACHINE, DUKE DUMONT &amp; NOTHING BUT THIEVES</h4>
-                <p>8TH SEPTEMBER 2023</p>
-                <a href="#" target="_blank">
-                    LISTEN NOW
-                </a>
+                <div class="album-txt">
+                    <h4>SOMETHING ON MY MIND - PURPLE DISCO MACHINE, DUKE DUMONT &amp; NOTHING BUT THIEVES</h4>
+                    <p>8TH SEPTEMBER 2023</p>
+                    <a href="#" target="_blank">
+                        LISTEN NOW
+                    </a>
+                </div>
             </article>
 
-            <article class="album-item tablet">
+            <article class="album-item tablet size-vertical">
                 <a href="#" target="_blank">
                     <img src="img/DeadClubCity-cover02.jpg" alt="album-img">
                 </a>
 
-                <h4>DEAD CLUB CITY</h4>
-                <p>30TH JUNE 2023</p>
-                <a href="#" target="_blank">
-                    LISTEN NOW
-                </a>
+                <div class="album-txt">
+                    <h4>DEAD CLUB CITY</h4>
+                    <p>30TH JUNE 2023</p>
+                    <a href="#" target="_blank">
+                        LISTEN NOW
+                    </a>
+                </div>
             </article>
 
             <article class="album-item tablet">
@@ -270,11 +306,13 @@
                     <img src="img/Overcome-cover.jpg" alt="album-img">
                 </a>
 
-                <h4>OVERCOME</h4>
-                <p>10TH MAY 2023</p>
-                <a href="#" target="_blank">
-                    LISTEN NOW
-                </a>
+                <div class="album-txt">
+                    <h4>OVERCOME</h4>
+                    <p>10TH MAY 2023</p>
+                    <a href="#" target="_blank">
+                        LISTEN NOW
+                    </a>
+                </div>
             </article>
 
             <article class="album-item tablet">
@@ -282,23 +320,27 @@
                     <img src="img/WelcometotheDCC-cover.jpg" alt="album-img">
                 </a>
 
-                <h4>WELCOME TO THE DCC</h4>
-                <p>15TH MARCH 2023</p>
-                <a href="#" target="_blank">
-                    LISTEN NOW
-                </a>
+                <div class="album-txt">
+                    <h4>WELCOME TO THE DCC</h4>
+                    <p>15TH MARCH 2023</p>
+                    <a href="#" target="_blank">
+                        LISTEN NOW
+                    </a>
+                </div>
             </article>
 
-            <article class="album-item pc">
+            <article class="album-item pc size-large">
                 <a href="#" target="_blank">
                     <img src="img/MoralPanicTheCompleteEdition-cover.jpg" alt="album-img">
                 </a>
 
-                <h4>MORAL PANIC THE COMPLETE EDITION</h4>
-                <p>29TH OCTOBER 2021</p>
-                <a href="#" target="_blank">
-                    LISTEN NOW
-                </a>
+                <div class="album-txt">
+                    <h4>MORAL PANIC THE COMPLETE EDITION</h4>
+                    <p>29TH OCTOBER 2021</p>
+                    <a href="#" target="_blank">
+                        LISTEN NOW
+                    </a>
+                </div>
             </article>
 
             <article class="album-item pc">
@@ -306,11 +348,13 @@
                     <img src="img/MoralPanic2-cover.jpg" alt="album-img">
                 </a>
 
-                <h4>MORAL PANIC ||</h4>
-                <p>23RD JULY 2021</p>
-                <a href="#" target="_blank">
-                    LISTEN NOW
-                </a>
+                <div class="album-txt">
+                    <h4>MORAL PANIC ||</h4>
+                    <p>23RD JULY 2021</p>
+                    <a href="#" target="_blank">
+                        LISTEN NOW
+                    </a>
+                </div>
             </article>
 
             <article class="album-item pc">
@@ -318,26 +362,13 @@
                     <img src="img/MoralPanic-cover.jpg" alt="album-img">
                 </a>
 
-                <h4>MORAL PANIC</h4>
-                <p>23RD OCTOBER 2020</p>
-
-                <ul>
-                    <li>Unperson</li>
-                    <li>Is Everybody Going Crazy?</li>
-                    <li>Moral Panic</li>
-                    <li>Real Love Song</li>
-                    <li>Phobia</li>
-                    <li>This Feels Like The End</li>
-                    <li>Free If We Want It</li>
-                    <li>Impossible</li>
-                    <li>There Was Sun</li>
-                    <li>Can You Afford To Be An Individual?</li>
-                    <li>Before We Drift Away</li>
-                </ul>
-
-                <a href="#" target="_blank">
-                    LISTEN NOW
-                </a>
+                <div class="album-txt">
+                    <h4>MORAL PANIC</h4>
+                    <p>23RD OCTOBER 2020</p>
+                    <a href="#" target="_blank">
+                        LISTEN NOW
+                    </a>
+                </div>
             </article>
 
             <article class="album-item pc">
@@ -345,23 +376,27 @@
                     <img src="img/WDYTWYMMTW-cover.jpg" alt="album-img">
                 </a>
 
-                <h4>WHAT DID YOU THINK WHEN YOU MADE ME THIS WAY?</h4>
-                <p>19TH OCTOBER 2018</p>
-                <a href="#" target="_blank">
-                    LISTEN NOW
-                </a>
+                <div class="album-txt">
+                    <h4>WHAT DID YOU THINK WHEN YOU MADE ME THIS WAY?</h4>
+                    <p>19TH OCTOBER 2018</p>
+                    <a href="#" target="_blank">
+                        LISTEN NOW
+                    </a>
+                </div>
             </article>
 
-            <article class="album-item pc">
+            <article class="album-item pc size-vertical">
                 <a href="#" target="_blank">
                     <img src="img/BrokenMachine-cover.jpg" alt="album-img">
                 </a>
 
-                <h4>BROKEN MACHINE</h4>
-                <p>8TH SEPTEMBER 2017</p>
-                <a href="#" target="_blank">
-                    LISTEN NOW
-                </a>
+                <div class="album-txt">
+                    <h4>BROKEN MACHINE</h4>
+                    <p>8TH SEPTEMBER 2017</p>
+                    <a href="#" target="_blank">
+                        LISTEN NOW
+                    </a>
+                </div>
             </article>
 
             <article class="album-item pc">
@@ -369,12 +404,20 @@
                     <img src="img/NBT-cover.jpg" alt="album-img">
                 </a>
 
-                <h4>NOTHING BUT THIEVES</h4>
-                <p>16TH OCTOBER 2015</p>
-                <a href="#" target="_blank">
-                    LISTEN NOW
-                </a>
+                <div class="album-txt">
+                    <h4>NOTHING BUT THIEVES</h4>
+                    <p>16TH OCTOBER 2015</p>
+                    <a href="#" target="_blank">
+                        LISTEN NOW
+                    </a>
+                </div>
             </article>
+        </div>
+
+        <div class="linkBtn">
+            <a href="#" target="_blank">
+                VIEW ALL MUSIC
+            </a>
         </div>
     </div>
 
