@@ -729,4 +729,24 @@ body {
     .album-item:hover img {
         transform: scale(1.05);
     }
+
+    #footer .sonyMusic-logo img {
+        width: 20%;
+        margin-bottom: 3rem;
+    }
+
+    #footer .linkList a {
+        font-size: 1rem;
+    }
+
+    #footer .under-footer {
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .topBtn {
+        bottom: 4%;
+    };
 }
