@@ -95,4 +95,13 @@ $(function() {
     $('.topBtn button').on('click', function() {
         $('html, body').animate({scrollTop: 0}, 600);
     });
+
+    // 현재 스크롤 위치에 따라 TOP 버튼 표시/숨기기
+    $(window).on('scroll', function() {
+        if ($(this).scrollTop()>300) {
+            $('.topBtn').fadeIn();
+        } else {
+            $('.topBtn').fadeOut();
+        }
+    });
 });
